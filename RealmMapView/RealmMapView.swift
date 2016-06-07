@@ -280,7 +280,7 @@ public class RealmMapView: MKMapView {
         let rlmConfiguration = RLMRealmConfiguration()
         
         if (configuration.path != nil) {
-            rlmConfiguration.path = configuration.path
+            rlmConfiguration.fileURL = configuration.fileURL
         }
         
         if (configuration.inMemoryIdentifier != nil) {
